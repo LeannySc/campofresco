@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CampoFresco</title> <!-- Cambia el título para cada página si quieres -->
+
+  <!-- LA LÍNEA MÁGICA QUE SOLUCIONA TODO EN GITHUB PAGES -->
+  
+  <!-- El resto de tus links a CSS, fonts, etc. -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Si es una página de Blockchain, añade la librería de crypto -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body class="about-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="bgCarrier" stroke-width="0"></g><g id="tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="iconCarrier"><path d="M4.5 10.5L7.5 3.5H16.5L19.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.5 10.5H19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10.5L5 20.5H19L17 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3.5C13.6569 3.5 15 4.84315 15 6.5C15 8.15685 13.6569 9.5 12 9.5C10.3431 9.5 9 8.15685 9 6.5C9 4.84315 10.3431 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+        <h1 class="sitename">CampoFresco</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productores.html">Productores</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Más Páginas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="detalle-producto.html">Detalles del Producto</a></li>
+              <li><a href="perfil-productor.html">Perfil del Productor</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- BOTÓN CORREGIDO -->
+      <a href="inicioSesion.html" class="btn-login">Iniciar Sesión</a>
+
+    </div>
+</header>
+
+  <main class="main">
+
+   <!-- Título de la Página -->
+<div class="page-title light-background">
+  <div class="container d-lg-flex justify-content-between align-items-center">
+    <h1 class="mb-2 mb-lg-0">Sobre Nosotros</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li class="current">Nosotros</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- Fin Título de la Página -->
+
+    <!-- Sección Sobre Nosotros -->
+<section id="about" class="about section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+
+        <!-- Contenido Principal -->
+        <div class="hero-content text-center" data-aos="zoom-in" data-aos-delay="200">
+          <h2>Conectando la Frescura del Campo con tu Negocio</h2>
+          <p class="hero-description">En CampoFresco, nuestra misión es revolucionar la forma en que los negocios acceden a frutas frescas, creando un puente directo, justo y eficiente entre los productores locales y el mercado mayorista. Creemos en la calidad que nace de la tierra y en el trabajo de quienes la cultivan.</p>
+        </div>
+
+        <!-- Layout de Imágenes -->
+        <div class="dual-image-layout" data-aos="fade-up" data-aos-delay="300">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <div class="primary-image-wrap">
+                <!-- Imagen del campo o huerta -->
+                <img src="assets/img/nosotros/campo.webp" alt="Huerta de Frutas Frescas" class="img-fluid">
+                <div class="floating-badge" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="badge-content">
+                    <i class="bi-patch-check-fill"></i>
+                    <span>Calidad Directa del Productor</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="secondary-image-wrap">
+                <!-- Imagen de un agricultor o producto -->
+                <img src="assets/img/nosotros/productor.webp" alt="Productor con su cosecha" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Nuestros Pilares -->
+    <div class="features-showcase" data-aos="fade-up" data-aos-delay="350">
+      <div class="row gy-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box" data-aos="flip-up" data-aos-delay="400">
+            <div class="feature-icon">
+              <i class="bi bi-award"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Calidad Garantizada</h4>
+              <p>Seleccionamos solo a los productores que cumplen con los más altos estándares de calidad y frescura.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box" data-aos="flip-up" data-aos-delay="450">
+            <div class="feature-icon">
+              <i class="bi bi-truck"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Logística Eficiente</h4>
+              <p>Optimizamos la cadena de suministro para que la fruta llegue del campo a tu negocio en tiempo récord.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box" data-aos="flip-up" data-aos-delay="500">
+            <div class="feature-icon">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Precios Justos</h4>
+              <p>Al eliminar intermediarios, aseguramos un beneficio justo para el productor y un precio competitivo para ti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="feature-box" data-aos="flip-up" data-aos-delay="550">
+            <div class="feature-icon">
+              <i class="bi bi-phone"></i>
+            </div>
+            <div class="feature-content">
+              <h4>Tecnología Sencilla</h4>
+              <p>Nuestra plataforma es fácil de usar, permitiéndote realizar pedidos y gestionar tu cuenta sin complicaciones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Fin de Nuestros Pilares -->
+
+    <!-- Estadísticas -->
+    <div class="metrics-section" data-aos="fade-up" data-aos-delay="400">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="metrics-wrapper">
+            <div class="row text-center">
+              <div class="col-lg-3 col-6">
+                <div class="metric-item" data-aos="zoom-in" data-aos-delay="450">
+                  <div class="metric-icon">
+                    <i class="bi bi-people"></i>
+                  </div>
+                  <div class="metric-value">
+                    <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2" class="purecounter"></span>+
+                  </div>
+                  <div class="metric-label">Productores Asociados</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="metric-item" data-aos="zoom-in" data-aos-delay="500">
+                  <div class="metric-icon">
+                    <i class="bi bi-box-seam"></i>
+                  </div>
+                  <div class="metric-value">
+                    <span data-purecounter-start="0" data-purecounter-end="10000" data-purecounter-duration="2" class="purecounter"></span>+
+                  </div>
+                  <div class="metric-label">Cajas Entregadas</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="metric-item" data-aos="zoom-in" data-aos-delay="550">
+                  <div class="metric-icon">
+                    <i class="bi bi-pin-map"></i>
+                  </div>
+                  <div class="metric-value">
+                    <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2" class="purecounter"></span>+
+                  </div>
+                  <div class="metric-label">Ciudades Abastecidas</div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-6">
+                <div class="metric-item" data-aos="zoom-in" data-aos-delay="600">
+                  <div class="metric-icon">
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                  <div class="metric-value">100%</div>
+                  <div class="metric-label">Calidad Garantizada</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- Fin de Estadísticas -->
+    
+  </div>
+</section><!-- Fin Sección Sobre Nosotros -->
+
+
+  </main>
+
+<footer id="footer" class="footer accent-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Columna Izquierda: Sobre CampoFresco -->
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">CampoFresco</span>
+        </a>
+        <p>Conectando la frescura del campo directamente a tu negocio.</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna Central 1: Enlaces -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Central 2: Nuestros Servicios -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Nuestros Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Compra por Volumen</a></li>
+          <li><a href="servicios.html">Logística y Entrega</a></li>
+          <li><a href="contact.html">Soporte</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Derecha: Contacto -->
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contacto</h4>
+        <p>Av. Principal 123</p>
+        <p>Ciudad, Estado 45678</p>
+        <p>México</p>
+        <p class="mt-4"><strong>Teléfono:</strong> <span>+52 123 456 7890</span></p>
+        <p><strong>Email:</strong> <span>info@campofresco.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">CampoFresco</strong> <span>Todos los Derechos Reservados</span></p>
+    <div class="credits">
+      Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Modal de Inicio de Sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="tu@correo.com" required>
+          </div>
+
+          <!-- Contraseña -->
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="passwordInput" required>
+          </div>
+          
+          <!-- Recordarme y Olvidé mi contraseña -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="rememberCheck">
+              <label class="form-check-label" for="rememberCheck">
+                Recordarme
+              </label>
+            </div>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <!-- Botón de Enviar -->
+          <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+        </form>
+
+        <!-- Divisor y Registro -->
+        <div class="text-center mt-4">
+          <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin del Modal de Inicio de Sesión -->
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

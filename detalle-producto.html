@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CampoFresco</title> <!-- Cambia el título para cada página si quieres -->
+
+  <!-- LA LÍNEA MÁGICA QUE SOLUCIONA TODO EN GITHUB PAGES -->
+  
+  <!-- El resto de tus links a CSS, fonts, etc. -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect"><link href="https://fonts.gstatic.com" rel="preconnect" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Si es una página de Blockchain, añade la librería de crypto -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+
+<body class="property-details-page">
+
+<header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="bgCarrier" stroke-width="0"></g><g id="tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="iconCarrier"><path d="M4.5 10.5L7.5 3.5H16.5L19.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.5 10.5H19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10.5L5 20.5H19L17 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3.5C13.6569 3.5 15 4.84315 15 6.5C15 8.15685 13.6569 9.5 12 9.5C10.3431 9.5 9 8.15685 9 6.5C9 4.84315 10.3431 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+        <h1 class="sitename">CampoFresco</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productores.html">Productores</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Más Páginas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="detalle-producto.html">Detalles del Producto</a></li>
+              <li><a href="perfil-productor.html">Perfil del Productor</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- BOTÓN CORREGIDO -->
+      <a href="inicioSesion.html" class="btn-login">Iniciar Sesión</a>
+
+    </div>
+</header>
+
+
+  <main class="main">
+
+<!-- Título de la Página -->
+<div class="page-title light-background">
+  <div class="container d-lg-flex justify-content-between align-items-center">
+    <h1 class="mb-2 mb-lg-0">Detalle del Producto</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li class="current">Manzana Gala</li>
+      </ol>
+    </nav>
+  </div>
+</div><!-- Fin Título de la Página -->
+
+   <!-- Sección Detalle del Producto -->
+<section id="property-details" class="property-details section">
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+      <!-- Columna Izquierda: Imágenes y Descripción -->
+      <div class="col-lg-8">
+        <!-- Galería de Imágenes -->
+        <div class="property-hero mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="property-gallery-slider swiper init-swiper">
+            <!-- Configuración del carrusel -->
+            <script type="application/json" class="swiper-config">{ "loop": true, "navigation": { "nextEl": ".swiper-button-next", "prevEl": ".swiper-button-prev" } }</script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/frutas/manzana-detalle-1.webp" class="img-fluid" alt="Imagen principal del producto"></div>
+              <div class="swiper-slide"><img src="assets/img/frutas/manzana-detalle-2.webp" class="img-fluid" alt="Detalle del producto"></div>
+              <div class="swiper-slide"><img src="assets/img/frutas/manzana-detalle-3.webp" class="img-fluid" alt="Cajas de producto"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </div><!-- Fin Galería -->
+
+        <!-- Título y Precio -->
+        <div class="property-info mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <span class="badge bg-primary mb-2">Manzana</span>
+              <h1 class="property-title">Manzana Gala Calidad Premium</h1>
+              <p class="mb-0">Vendido por: <a href="productores.html">Huertas del Sol</a></p>
+            </div>
+            <div class="text-end">
+              <div class="main-price">$45.00</div>
+              <span class="period">por caja (10kg)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Descripción -->
+        <div class="property-details mb-4" data-aos="fade-up" data-aos-delay="400">
+          <h3>Descripción del Producto</h3>
+          <p>La manzana Gala es conocida por su sabor dulce y refrescante, con una piel fina y una textura crujiente. Es ideal tanto para consumo directo como para repostería o jugos. Nuestra cosecha de Chihuahua garantiza una calidad premium, con un color rojo vibrante y un tamaño uniforme.</p>
+          
+          <!-- Detalles Adicionales -->
+          <h4 class="mt-4">Detalles Adicionales</h4>
+          <ul class="feature-list">
+            <li><i class="bi bi-geo-alt"></i> <strong>Origen:</strong> Chihuahua, México</li>
+            <li><i class="bi bi-rulers"></i> <strong>Calibre:</strong> Grande (88-100)</li>
+            <li><i class="bi bi-box-seam"></i> <strong>Empaque:</strong> Caja de cartón de 10 kg</li>
+            <li><i class="bi bi-calendar-check"></i> <strong>Disponibilidad:</strong> Cosecha de temporada, envío inmediato</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Columna Derecha: Panel de Compra e Info del Productor -->
+      <div class="col-lg-4">
+        <div class="sticky-sidebar">
+
+          <!-- Panel de Compra -->
+          <div class="actions-card mb-4" data-aos="fade-up" data-aos-delay="250">
+            <h4>Realizar Pedido</h4>
+            <div class="mb-3">
+                <label for="quantity" class="form-label">Cantidad (cajas):</label>
+                <input type="number" id="quantity" class="form-control" value="1" min="1">
+            </div>
+            <button class="btn btn-primary btn-lg w-100">
+              <i class="bi bi-cart-plus"></i> Añadir al Carrito
+            </button>
+            <p class="text-center small mt-2"><strong>Nota del Desarrollador:</strong> Este es el diseño visual. La funcionalidad del carrito requiere programación adicional (JavaScript).</p>
+          </div>
+
+          <!-- Tarjeta del Productor -->
+          <div class="agent-card mb-4" data-aos="fade-up" data-aos-delay="350">
+            <div class="agent-header">
+              <div class="agent-avatar">
+                <img src="assets/img/productores/productor-1.webp" class="img-fluid" alt="Logo del Productor">
+              </div>
+              <div class="agent-info">
+                <h4>Huertas del Sol</h4>
+                <p class="agent-role">Productor Verificado</p>
+              </div>
+            </div>
+            <p class="text-center mt-3">Comprometidos con la agricultura sostenible y la mejor calidad en manzanas y peras desde 1985.</p>
+            <a href="perfil-productor.html" class="btn btn-outline-primary w-100 mt-2">Ver Perfil del Productor</a>
+          </div>
+
+          <!-- Productos Relacionados -->
+          <div class="similar-properties" data-aos="fade-up" data-aos-delay="450">
+            <h4>Otros Productos de este Productor</h4>
+            <a href="#" class="similar-property-item">
+              <img src="assets/img/frutas/pera.webp" class="img-fluid" alt="Pera Anjou">
+              <div class="similar-info">
+                <h6>Pera Anjou</h6>
+                <p class="similar-price">$50.00 / caja</p>
+                <p class="similar-specs">Calidad Primera</p>
+              </div>
+            </a>
+            <!-- Puedes añadir más productos aquí -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- Fin Sección Detalle del Producto -->
+
+  </main>
+
+ <footer id="footer" class="footer accent-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Columna Izquierda: Sobre CampoFresco -->
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">CampoFresco</span>
+        </a>
+        <p>Conectando la frescura del campo directamente a tu negocio.</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna Central 1: Enlaces -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Central 2: Nuestros Servicios -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Nuestros Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Compra por Volumen</a></li>
+          <li><a href="servicios.html">Logística y Entrega</a></li>
+          <li><a href="contact.html">Soporte</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Derecha: Contacto -->
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contacto</h4>
+        <p>Av. Principal 123</p>
+        <p>Ciudad, Estado 45678</p>
+        <p>México</p>
+        <p class="mt-4"><strong>Teléfono:</strong> <span>+52 123 456 7890</span></p>
+        <p><strong>Email:</strong> <span>info@campofresco.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">CampoFresco</strong> <span>Todos los Derechos Reservados</span></p>
+    <div class="credits">
+      Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+
+</footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- Modal de Inicio de Sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Iniciar Sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Email -->
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="tu@correo.com" required>
+          </div>
+
+          <!-- Contraseña -->
+          <div class="mb-3">
+            <label for="passwordInput" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="passwordInput" required>
+          </div>
+          
+          <!-- Recordarme y Olvidé mi contraseña -->
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="rememberCheck">
+              <label class="form-check-label" for="rememberCheck">
+                Recordarme
+              </label>
+            </div>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <!-- Botón de Enviar -->
+          <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+        </form>
+
+        <!-- Divisor y Registro -->
+        <div class="text-center mt-4">
+          <p>¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fin del Modal de Inicio de Sesión -->
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

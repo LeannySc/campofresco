@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CampoFresco - Frutas Frescas al por Mayor</title>
+  <meta name="description" content="Conectamos productores de frutas de alta calidad con negocios y compradores mayoristas. Encuentra la mejor frescura para tu negocio.">
+  <meta name="keywords" content="frutas, mayoreo, productores, fresco, negocio, restaurante, mercado">
+
+  <!-- Favicons, Fonts, y CSS Links -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+ <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <svg class="my-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="bgCarrier" stroke-width="0"></g><g id="tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="iconCarrier"><path d="M4.5 10.5L7.5 3.5H16.5L19.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M4.5 10.5H19.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 10.5L5 20.5H19L17 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 3.5C13.6569 3.5 15 4.84315 15 6.5C15 8.15685 13.6569 9.5 12 9.5C10.3431 9.5 9 8.15685 9 6.5C9 4.84315 10.3431 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+        <h1 class="sitename">CampoFresco</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productores.html">Productores</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Más Páginas</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="detalle-producto.html">Detalles del Producto</a></li>
+              <li><a href="perfil-productor.html">Perfil del Productor</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <!-- BOTÓN CORREGIDO -->
+      <a href="inicioSesion.html" class="btn-login">Iniciar Sesión</a>
+
+    </div>
+</header>
+
+  <main class="main">
+
+    <!-- Sección Hero -->
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="hero-wrapper">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="search-container">
+                  <div class="search-header"><h1>Busca Frutas Frescas al Por Mayor</h1><p>Conecta con productores y encuentra la mejor calidad para tu negocio.</p></div>
+                  <form action="" class="property-search-form">
+                    <div class="search-grid">
+                      <div class="search-field"><label for="search-fruta" class="field-label">Tipo de Fruta</label><input type="text" id="search-fruta" name="fruta" placeholder="Ej: Manzana, Naranja, Fresa" required=""><i class="bi bi-basket field-icon"></i></div>
+                      <div class="search-field"><label for="search-region" class="field-label">Región de Origen</label><select id="search-region" name="region" required=""><option value="">Cualquier Región</option><option value="nacional">Nacional</option><option value="importada">Importada</option></select><i class="bi bi-globe-americas field-icon"></i></div>
+                    </div>
+                    <button type="submit" class="search-btn"><i class="bi bi-search"></i><span>Buscar Productos</span></button>
+                  </form>
+                </div>
+                <div class="achievement-grid" data-aos="fade-up" data-aos-delay="400">
+                  <div class="achievement-item"><div class="achievement-number"><span data-purecounter-start="0" data-purecounter-end="50" class="purecounter"></span>+</div><span class="achievement-text">Productores Verificados</span></div>
+                  <div class="achievement-item"><div class="achievement-number"><span data-purecounter-start="0" data-purecounter-end="150" class="purecounter"></span>+</div><span class="achievement-text">Variedades de Frutas</span></div>
+                  <div class="achievement-item"><div class="achievement-number"><span data-purecounter-start="0" data-purecounter-end="99" class="purecounter"></span>%</div><span class="achievement-text">Calidad Garantizada</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6"><div class="hero-visual-frutas" data-aos="fade-left" data-aos-delay="400"><img src="assets/img/frutas-hero.webp" alt="Mercado de Frutas Frescas" class="img-fluid"></div></div>
+          </div>
+        </div>
+      </div>
+    </section><!-- Fin Sección Hero -->
+
+    <!-- Sección "Sobre CampoFresco" -->
+    <section id="home-about" class="home-about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-5"><div class="col-lg-5" data-aos="zoom-in" data-aos-delay="200"><div class="image-gallery"><div class="primary-image"><img src="assets/img/nosotros/campo.webp" alt="Huerta de Frutas Frescas" class="img-fluid"><div class="experience-badge"><div class="badge-content"><div class="number">100%</div><div class="text">Frescura<br>Garantizada</div></div></div></div><div class="secondary-image"><img src="assets/img/nosotros/productor.webp" alt="Productor con su cosecha" class="img-fluid"></div></div></div><div class="col-lg-7" data-aos="fade-left" data-aos-delay="300"><div class="content"><div class="section-header"><span class="section-label">Sobre CampoFresco</span><h2>Conectando la Frescura del Campo con tu Negocio</h2></div><p>En CampoFresco, creamos un puente directo y eficiente entre los mejores productores de frutas y los negocios que buscan calidad y frescura. Nuestra plataforma simplifica la compra al por mayor, asegurando precios justos y productos excepcionales.</p><div class="action-section"><a href="nosotros.html" class="btn-cta"><span>Conoce Nuestra Historia</span><i class="bi bi-arrow-right"></i></a></div></div></div></div>
+      </div>
+    </section><!-- Fin Sección "Sobre CampoFresco" -->
+
+    <!-- Sección "Productos Destacados" -->
+    <section id="featured-products" class="featured-properties section">
+        <div class="container section-title" data-aos="fade-up"><h2>Productos Destacados de la Semana</h2><p>Una selección de lo mejor de nuestra red de productores, listos para tu negocio.</p></div>
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6"><div class="property-item h-100"><a href="detalle-producto.html" class="property-link"><div class="property-image-wrapper"><img src="assets/img/frutas/manzanas.webp" alt="Manzanas Rojas" class="img-fluid"></div></a><div class="property-details"><div class="property-header"><div class="property-price">$45.00 <span class="fs-6 fw-normal">/ caja</span></div><div class="property-type">Manzana</div></div><h4 class="property-title">Manzana Gala Premium</h4></div></div></div>
+                <div class="col-lg-4 col-md-6"><div class="property-item h-100"><a href="detalle-producto.html" class="property-link"><div class="property-image-wrapper"><img src="assets/img/frutas/naranjas.webp" alt="Naranjas Valencia" class="img-fluid"></div></a><div class="property-details"><div class="property-header"><div class="property-price">$30.00 <span class="fs-6 fw-normal">/ caja</span></div><div class="property-type">Naranja</div></div><h4 class="property-title">Naranja Valencia para Jugo</h4></div></div></div>
+                <div class="col-lg-4 col-md-6"><div class="property-item h-100"><a href="detalle-producto.html" class="property-link"><div class="property-image-wrapper"><img src="assets/img/frutas/uvas.webp" alt="Uva Roja" class="img-fluid"></div></a><div class="property-details"><div class="property-header"><div class="property-price">$60.00 <span class="fs-6 fw-normal">/ caja</span></div><div class="property-type">Uva</div></div><h4 class="property-title">Uva Roja Globo sin Semilla</h4></div></div></div>
+            </div>
+             <div class="text-center mt-5"><a href="productos.html" class="btn-view-all"><span>Ver Catálogo Completo</span><i class="bi bi-arrow-right"></i></a></div>
+        </div>
+    </section><!-- Fin "Productos Destacados" -->
+    
+    <!-- Sección Testimonios -->
+    <section id="testimonials" class="testimonials section light-background">
+      <div class="container section-title" data-aos="fade-up"><h2>Lo que Dicen Nuestros Clientes</h2><p>La satisfacción de quienes confían en nosotros es nuestra mejor carta de presentación.</p></div>
+      <div class="container"><div class="testimonial-grid">
+          <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="100"><div class="testimonial-card"><div class="testimonial-header"><div class="testimonial-image"><img src="assets/img/person/chef.webp" class="img-fluid" alt="Chef"></div><div class="testimonial-meta"><h3>Sofía Martinez</h3><h4>Chef, Restaurante "Sabor"</h4></div></div><div class="testimonial-body"><i class="bi bi-chat-quote-fill quote-icon"></i><p>"Con CampoFresco, la calidad de la fruta en mi cocina ha subido a otro nivel. Mis clientes notan la frescura y yo noto la eficiencia."</p></div></div></div>
+          <div class="testimonial-item featured" data-aos="zoom-in" data-aos-delay="200"><div class="testimonial-card"><div class="testimonial-header"><div class="testimonial-image"><img src="assets/img/person/productor.webp" class="img-fluid" alt="Productor"></div><div class="testimonial-meta"><h3>Carlos Jiménez</h3><h4>Productor, Cítricos del Golfo</h4></div></div><div class="testimonial-body"><i class="bi bi-chat-quote-fill quote-icon"></i><p>"Unirme a su red me abrió las puertas a un mercado más grande y justo. Ahora mi cosecha llega a más negocios que valoran el buen producto."</p></div></div></div>
+          <div class="testimonial-item" data-aos="zoom-in" data-aos-delay="300"><div class="testimonial-card"><div class="testimonial-header"><div class="testimonial-image"><img src="assets/img/person/tienda.webp" class="img-fluid" alt="Dueña de tienda"></div><div class="testimonial-meta"><h3>Laura Fernández</h3><h4>Dueña, "El Mercadito"</h4></div></div><div class="testimonial-body"><i class="bi bi-chat-quote-fill quote-icon"></i><p>"La logística era mi mayor problema hasta que los encontré. Ahora recibo fruta fresca y de calidad puntualmente cada semana."</p></div></div></div>
+      </div></div>
+    </section><!-- Fin Testimonios -->
+
+    <!-- Sección Final CTA -->
+    <section class="call-to-action-1 call-to-action section" id="call-to-action">
+      <div class="cta-bg" style="background-image: url('assets/img/nosotros/campo.webp');"></div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center"><div class="col-xl-8 col-lg-10">
+            <div class="cta-content text-center">
+              <h2>¿Listo para llevar la frescura del campo a tu negocio?</h2>
+              <p>Únete a nuestra plataforma. Si eres comprador, encuentra la mejor calidad. Si eres productor, expande tu mercado. Juntos, hacemos crecer el negocio.</p>
+              <div class="cta-buttons">
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Registrarme como Comprador</a>
+                  <a href="contact.html" class="btn btn-outline">Soy Productor</a>
+              </div>
+            </div>
+        </div></div>
+      </div>
+    </section><!-- Fin CTA -->
+
+  </main>
+
+<footer id="footer" class="footer accent-background">
+
+  <div class="container footer-top">
+    <div class="row gy-4">
+
+      <!-- Columna Izquierda: Sobre CampoFresco -->
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="sitename">CampoFresco</span>
+        </a>
+        <p>Conectando la frescura del campo directamente a tu negocio.</p>
+        <div class="social-links d-flex mt-4">
+          <a href=""><i class="bi bi-twitter-x"></i></a>
+          <a href=""><i class="bi bi-facebook"></i></a>
+          <a href=""><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+
+      <!-- Columna Central 1: Enlaces -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Central 2: Nuestros Servicios -->
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Nuestros Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Compra por Volumen</a></li>
+          <li><a href="servicios.html">Logística y Entrega</a></li>
+          <li><a href="contact.html">Soporte</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna Derecha: Contacto -->
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contacto</h4>
+        <p>Av. Principal 123</p>
+        <p>Ciudad, Estado 45678</p>
+        <p>México</p>
+        <p class="mt-4"><strong>Teléfono:</strong> <span>+52 123 456 7890</span></p>
+        <p><strong>Email:</strong> <span>info@campofresco.com</span></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="container copyright text-center mt-4">
+    <p>© <span>Copyright</span> <strong class="px-1 sitename">CampoFresco</strong> <span>Todos los Derechos Reservados</span></p>
+    <div class="credits">
+      Diseñado por <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </div>
+  </div>
+
+</footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
