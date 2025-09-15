@@ -38,12 +38,26 @@ class Blockchain {
 
     // Método para añadir un nuevo bloque a la cadena
     addBlock(newBlock) {
+        // ✅ CORRECCIÓN: Asignar el índice correcto automáticamente
+        newBlock.index = this.chain.length;
+        
         // Se conecta el nuevo bloque al último, copiando su hash
         newBlock.previousHash = this.getLatestBlock().hash;
-        // Se calcula el hash del nuevo bloque
+        
+        // Se calcula el hash del nuevo bloque (después de asignar el índice)
         newBlock.hash = newBlock.calculateHash();
+        
         // Se añade a la cadena
         this.chain.push(newBlock);
+    }
+
+    // ✅ MÉTODO ADICIONAL: Para crear un bloque de forma más segura
+    createBlock(data) {
+        const index = this.chain.length; // El índice será la longitud actual de la cadena
+        const timestamp = new Date().toISOString();
+        const previousHash = this.getLatestBlock().hash;
+        
+        return new Block(index, timestamp, data, previousHash);
     }
 
     // Método crucial para verificar si la cadena ha sido alterada
