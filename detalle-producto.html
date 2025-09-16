@@ -129,18 +129,37 @@
       <div class="col-lg-4">
         <div class="sticky-sidebar">
 
-          <!-- Panel de Compra -->
-          <div class="actions-card mb-4" data-aos="fade-up" data-aos-delay="250">
-            <h4>Realizar Pedido</h4>
-            <div class="mb-3">
-                <label for="quantity" class="form-label">Cantidad (cajas):</label>
-                <input type="number" id="quantity" class="form-control" value="1" min="1">
-            </div>
-            <button class="btn btn-primary btn-lg w-100">
-              <i class="bi bi-cart-plus"></i> Añadir al Carrito
-            </button>
-            <p class="text-center small mt-2"><strong>Nota del Desarrollador:</strong> Este es el diseño visual. La funcionalidad del carrito requiere programación adicional (JavaScript).</p>
-          </div>
+<!-- Panel de Compra (Versión Final con Mensaje de Éxito) -->
+<div class="actions-card mb-4" data-aos="fade-up" data-aos-delay="250">
+  <h4>Realizar Pedido</h4>
+  
+  <!-- Formulario de Compra -->
+  <form id="purchaseForm">
+      <div class="mb-3">
+          <label for="quantity" class="form-label">Cantidad (cajas):</label>
+          <input type="number" id="quantity" class="form-control" value="1" min="1" required>
+      </div>
+
+      <!-- Datos ocultos para la simulación -->
+      <input type="hidden" id="productName" value="Manzana Gala Calidad Premium">
+      <input type="hidden" id="origin" value="Finca San José, Piura, Perú">
+      <input type="hidden" id="producer" value="Familia Rojas">
+
+      <!-- Botón de Compra -->
+      <button type="submit" class="btn btn-outline-primary btn-lg w-100">
+        <i class="bi bi-cart-plus me-2"></i>Añadir al Pedido
+      </button>
+  </form>
+
+  <!-- MENSAJE DE ÉXITO (Inicialmente oculto) -->
+  <div id="purchaseSuccessMessage" style="display: none;" class="alert alert-success text-center mt-3">
+    <!-- El mensaje se insertará aquí con JavaScript -->
+  </div>
+
+  <p class="text-center small text-muted mt-3">
+    <i class="bi bi-shield-check"></i> Origen y frescura verificados en cada pedido.
+  </p>
+</div><!-- Fin Panel de Compra -->
 
           <!-- Tarjeta del Productor -->
           <div class="agent-card mb-4" data-aos="fade-up" data-aos-delay="350">
@@ -306,6 +325,9 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/blockchain.js"></script> 
+  <script src="assets/js/compra.js"></script> 
 
 </body>
 
